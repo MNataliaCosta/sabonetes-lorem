@@ -1,0 +1,18 @@
+<ion-view view-title="Faça o seu sabonete!">
+  <ion-content>
+    <p> Saiba como fazer sabonetes terapêuticos na sua casa! Selecione seu tipo de pele e até 2 benefícios desejados para ver a receita mais indicada. </p>
+
+    <ion-list>
+      <p>Tipo de pele: </p>
+      <ion-checkbox class="checkbox-positive" ng-repeat="pele in peles">{{pele}}</ion-checkbox>
+
+      <p>Benefícios: </p>
+      <ion-checkbox class="checkbox-positive" ng-repeat="beneficio in beneficios">{{beneficio}}</ion-checkbox>
+    </ion-list>
+
+    <button class="button button-block button-positive" type="submit" ng-click="enviar()">Enviar</button>
+
+      </p>
+    </ion-item>
+  </ion-content>
+</ion-view>

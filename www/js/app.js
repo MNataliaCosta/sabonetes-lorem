@@ -25,49 +25,70 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
-    .state('app', {
-    url: '/app',
-    abstract: true,
-    templateUrl: 'templates/menu.html',
-    controller: 'AppCtrl'
-  })
+  .state('inicio', {
+  url: '/inicio',
+  templateUrl: 'templates/inicio.html',
+  controller: 'InicioCtrl'
+})
 
-  .state('app.search', {
-    url: '/search',
+  .state('app', {
+  url: '/app',
+  abstract: true,
+  templateUrl: 'templates/menu.html',
+  controller: 'AppCtrl'
+})
+
+  .state('app.faca-o-seu', {
+    url: '/faca-o-seu',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/faca-o-seu.html',
+        controller: 'FacaOSeuCtrl'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+//state pro detalhe da receita
+    .state('app.detalheReceita', {
+      url: 'faca-o-seu/detalhe-receita/:id',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-    })
-    .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
+          templateUrl: 'templates/detalhe-receita.html',
+          controller: 'DetalheReceitaCtrl'
         }
       }
     })
 
-  .state('app.single', {
-    url: '/playlists/:playlistId',
+  .state('app.ondeComprar', {
+      url: '/onde-comprar',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/onde-comprar.html',
+          controller: 'OndeComprarCtrl'
+        }
+      }
+    })
+
+  .state('app.duvidas', {
+    url: '/tire-suas-duvidas',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/tire-suas-duvidas.html',
+        controller: 'DuvidasCtrl'
       }
     }
-  });
+  })
+
+  .state('app.sobre', {
+    url: '/sobre',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/sobre.html',
+        controller: 'SobreCtrl'
+      }
+    }
+  })
+
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/inicio');
 });
