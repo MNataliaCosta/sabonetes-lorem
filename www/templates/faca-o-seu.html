@@ -4,7 +4,8 @@
 
     <ion-list>
       <p>Tipo de pele: </p>
-      <ion-checkbox class="checkbox-positive" ng-repeat="pele in peles">{{pele}}</ion-checkbox>
+      <ion-radio ng-model="choice" ng-repeat="pele in peles">{{pele}}</ion-radio>
+
 
       <p>Benefícios: </p>
       <ion-checkbox class="checkbox-positive" ng-repeat="beneficio in beneficios">{{beneficio}}</ion-checkbox>

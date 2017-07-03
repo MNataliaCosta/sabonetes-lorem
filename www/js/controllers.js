@@ -10,7 +10,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FacaOSeuCtrl', function($scope, $state) {
-  $scope.peles = ['normal', 'mista', 'oleosa'];
+  $scope.peles = ['normal', 'mista', 'oleosa', 'seca'];
 
   $scope.beneficios = ['hidratação', 'esfoliação', 'rejuvenescimento'];
 
