@@ -4,11 +4,16 @@
 
     <ion-list>
       <p>Tipo de pele: </p>
-      <ion-radio ng-model="choice" ng-repeat="pele in peles">{{pele}}</ion-radio>
+      <ion-radio name="pele" ng-model="resultado.peles" ng-repeat="pele in peles" ng-value="'{{pele}}'">{{pele}}</ion-radio>
 
 
       <p>Benefícios: </p>
+      <ion-radio name="beneficios"ng-model="resultado.beneficios" ng-repeat="beneficio in beneficios" ng-value="'{{beneficio}}'">{{beneficio}}</ion-radio>
+
+      <!-- se quisermos depois fazer usando 2 beneficios
       <ion-checkbox class="checkbox-positive" ng-repeat="beneficio in beneficios">{{beneficio}}</ion-checkbox>
+      -->
+
     </ion-list>
 
     <button class="button button-block button-positive" type="submit" ng-click="enviar()">Enviar</button>
