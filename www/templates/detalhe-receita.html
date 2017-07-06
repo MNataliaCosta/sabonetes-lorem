@@ -1,28 +1,28 @@
 <ion-view view-title="Receita">
   <!-- Podemos colocar um nome para a receita, se quisermos -->
-  <ion-content>
-    <h1>{{resultado.texto}}</h1>
+  <ion-content class="pagina-detalhe-receita">
+    <h2>Receita X</h2>
 
-    <p>ATENÇÃO: se você tiver alergia a algum dos igredientes, não utilizá-lo. Se tiver dúvidas, entrar em contato conosco via a aba chat no menu.</p>
+    <p class="atencao-alergia">ATENÇÃO: caso tenha alergia a algum dos igredientes sugeridos, não utilizá-lo. Para mais dúvidas, entrar em contato conosco via a aba chat no menu.</p>
 
-    <p>Antes de começar:</p>
-      <ol>
+    <p class="pagina-detalhe-receita-titulo">Antes de começar:</p>
+      <ul>
         <li>a</li>
         <li>b</li>
         <li>c</li>
-      </ol>
+      </ul>
 
-    <p>Ingredientes:</p>
-      <ol>
+    <p class="pagina-detalhe-receita-titulo">Ingredientes:</p>
+      <ul>
         <li>a</li>
         <li>b</li>
         <li>c</li>
-      </ol>
+      </ul>
 
-    <p>Preparo:</p>
+    <p class="pagina-detalhe-receita-titulo">Preparo:</p>
     <p>Junte, aqueça, mistura, espere, use.</p>
 
     <p>Agora que você já sabe como fazer, é só procurar onde comprar!</p>
-    <button class="button button-block button-positive" type="submit" ng-click="irMapa()">Onde Comprar</button>
+    <button class="button button-block button-royal" type="submit" ng-click="irMapa()">Onde Comprar</button>
   </ion-content>
 </ion-view>

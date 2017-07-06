@@ -1,9 +1,146 @@
+/*ajustes gerais*/
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #585b59;
+}
+
+ion-header-bar.bar-stable.bar.bar-header{
+  background-color: #4dc19e;
+}
+
+.bar.bar-stable .title{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+button.button.button-icon.button-clear.ion-navicon{
+  color: white;
+}
+
+i.icon{
+  color: white;
+}
+
+h1.title.title-left{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+.title.title-left.header-item{
+  color: white;
+  font-weight: bold;
+}
+
+a.item-content{
+  font-size: 16px;
+  color: #585b59;
+}
+
+button.button.button-block.button-royal{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+}
+
+/*ajustes início*/
+.pagina-inicio{
+  padding: 15px;
+
+}
+
+/*ajustes página faca-o-seu*/
+.pagina-faca-o-seu{
+  padding: 15px 15px 5px 15px;
+}
+
+.textos-formulario{
+  position: relative;
+}
+
+.pagina-faca-o-seu-chamada{
+  font-size: 16px;
+  text-align: justify;
+  margin: auto;
+}
+
+.pagina-faca-o-seu-titulo{
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.radio-content{
+  font-size:13px;
+}
+
+.item-radio input:checked + .radio-content .radio-icon {
+    color: #f9943b;
+}
+
+/*ajustes página detalhe-receita*/
+.pagina-detalhe-receita{
+  padding: 15px;
+}
+
+.pagina-detalhe-receita h2{
+  color: #585b59;
+}
+
+.atencao-alergia{
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: justify;
+  margin: 0;
+}
+
+.pagina-detalhe-receita-titulo{
+  padding: 15px 0 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*ajustes página onde-comprar*/
 ng-map{
   height: 600px;
+}
+
+/*ajustes página tire-suas-duvidas*/
+.pagina-tire-suas-duvidas{
+  position: absolute;
+}
+
+.conversa-chat{
+  position: relative;
+  bottom: 0;
+}
+
+.conversa-chat img{
+  width: 100%;
+}
+
+.item.item-input-inset{
+  background-color: #886aea;
 }
 
 .inputChat{
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+button.button.button-small{
+  background-color: #886aea;
+  border: solid white 1px;
+}
+
+/*ajustes página sobre*/
+.pagina-sobre{
+  padding: 15px;
 }

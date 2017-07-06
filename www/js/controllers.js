@@ -21,12 +21,12 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('DetalheReceitaCtrl', function($scope, $stateParams, FacaOSeuService) {
+.controller('DetalheReceitaCtrl', function($scope, $state, $stateParams, FacaOSeuService) {
   // ele deve receber o objeto das receitas
   $scope.resultado = FacaOSeuService.get($stateParams.texto);
 
   $scope.irMapa = function(){
-    $state.go('app.ondeComprar')
+    $state.go('app.ondeComprar');
   }
 })
 
