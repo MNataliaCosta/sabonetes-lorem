@@ -11,9 +11,9 @@ angular.module('starter.controllers', [])
 
 .controller('FacaOSeuCtrl', function($scope, $state, FacaOSeuService) {
 
-  $scope.peles = ['normal', 'mista', 'oleosa', 'seca'];
+  $scope.peles = ['normal', 'sensível', 'mista', 'oleosa', 'seca'];
 
-  $scope.beneficios = ['hidratação', 'esfoliação', 'rejuvenescimento'];
+  $scope.beneficios = ['hidratação', 'esfoliação', 'anti-acne', 'clareamento', 'redução de pelos'];
 
   $scope.enviar = function(){
     $state.go('app.detalheReceita')

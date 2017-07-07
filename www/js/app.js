@@ -50,7 +50,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 //state pro detalhe da receita
     .state('app.detalheReceita', {
-      url: 'faca-o-seu/detalhe-receita/:id',
+      url: '/faca-o-seu/detalhe-receita/:id',
       views: {
         'menuContent': {
           templateUrl: 'templates/detalhe-receita.html',
