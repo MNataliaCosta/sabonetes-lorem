@@ -13,20 +13,27 @@ angular.module('starter.controllers', [])
 
   $scope.peles = ['normal', 'sensível', 'mista', 'oleosa', 'seca'];
 
-  $scope.beneficios = ['hidratação', 'esfoliação', 'anti-acne', 'clareamento', 'redução de pelos'];
+  $scope.beneficios = ['hidratação', 'anti-acne', 'rejuvenescimento', 'redução de pelos', 'esfoliação'];
+
+  $scope.resultado = {
+    peles : null,
+    beneficios : null
+  };
+
 
   $scope.enviar = function(){
+    FacaOSeuService.set($scope.resultado);
     $state.go('app.detalheReceita')
   }
 
 })
 
-.controller('DetalheReceitaCtrl', function($scope, $state, $stateParams, FacaOSeuService) {
+.controller('DetalheReceitaCtrl', function($scope, $stateParams, FacaOSeuService) {
   // ele deve receber o objeto das receitas
   $scope.resultado = FacaOSeuService.get($stateParams.texto);
 
   $scope.irMapa = function(){
-    $state.go('app.ondeComprar');
+    $state.go('app.ondeComprar')
   }
 })
 

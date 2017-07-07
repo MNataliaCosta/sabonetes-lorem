@@ -3,7 +3,7 @@ angular.module('starter.services', [])
 .factory('FacaOSeuService', function() {
   var resultado =
     {
-    pele : null,
+    peles : null,
     beneficios : null
   };
 
@@ -11,28 +11,39 @@ angular.module('starter.services', [])
   var receitas = [
     {
       condicao:{
-      pele: 'normal',
-      beneficios: 'hidratação'
+        peles: 'normal',
+        beneficios: 'hidratação'
+      },
+      texto:' normal e hidratar'
     },
-    texto:' seca e hidratar'
-  },
-  {
-    condicao:{
-     pele: 'oleosa',
-     beneficios: 'esfoliação'
-   },
-   texto: 'oleosa e esfoliar'
-   }
-
- ];
+    {
+      condicao:{
+         peles: 'oleosa',
+         beneficios: 'esfoliação'
+       },
+       texto: 'oleosa e esfoliar'
+     }
+   ];
 
   return {
+    set: function(r) {
+      console.log(r);
+      resultado = r;
+    },
     compare: function() {
     return receitas.texto;
   },
     get: function() {
+      console.log('get chamado');
+      console.log(resultado);
+
       for (var i = 0; i < receitas.length; i++) {
+        console.log(i);
+        console.log(receitas[i].condicao);
         if (angular.equals(resultado, receitas[i].condicao)) {
+          console.log('entrou');
+          console.log(i);
+          console.log(receitas[i].texto);
           return receitas[i].texto;
         }
       }
