@@ -98,22 +98,11 @@ button.button.button-block.button-royal{
 .pagina-faca-o-seu-chamada{
   font-size: 16px;
   text-align: justify;
-  margin: auto;
+  margin-bottom: 20px;
 }
 
-.pagina-faca-o-seu-titulo{
-  padding: 10px 0;
-  font-size: 14px;
-  font-weight: bold;
-  margin: auto;
-}
-
-.radio-content{
-  font-size:13px;
-}
-
-.item-radio input:checked + .radio-content .radio-icon {
-    color: #f9943b;
+.textos-formulario{
+  margin-bottom: 20px;
 }
 
 /*ajustes página detalhe-receita*/
