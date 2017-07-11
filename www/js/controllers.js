@@ -13,7 +13,7 @@ angular.module('starter.controllers', [])
 
   $scope.peles = ['normal', 'sensível', 'mista', 'oleosa', 'seca'];
 
-  $scope.beneficios = ['hidratação', 'anti-acne', 'rejuvenescimento', 'redução de pelos', 'esfoliação'];
+  $scope.beneficios = ['hidratação', 'anti-acne', 'rejuvenescimento', 'redução de pelos', 'esfoliação', 'clareamento de manchas'];
 
   $scope.resultado = {
     peles : null,
