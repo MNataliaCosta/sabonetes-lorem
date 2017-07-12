@@ -1,23 +1,50 @@
 <ion-view view-title="Tire suas dúvidas">
-  <ion-content class="pagina-tire-suas-duvidas">
 
-    <div class="conversa-chat">
-      <img src="img/conversa-chat-2.png" alt="conversa">
-    </div>
+  <div class="bar bar-header bar-positive">
+    <h1 class="title">{{dados.nome}}</h1>
+  </div>
 
-    <div class="inputChat">
+  <ion-content class="pagina-tire-suas-duvidas has-header">
 
-      <div class="item item-input-inset">
-        <label class="item-input-wrapper">
-          <input type="text" placeholder="Digite sua mensagem...">
-        </label>
-        <button class="button button-small">
-          <i class="icon ion-android-send"></i>
-        </button>
-      </div>
+    <div class="list card">
+
+        <div class="item item-avatar" ng-repeat="mensagem in mensagens">
+            <h2>{{mensagem.nome}}</h2>
+            <p>{{mensagem.conteudo}}</p>
+        </div>
 
     </div>
 
-    </ion-list>
+
   </ion-content>
+
+  <div class="inputChat">
+
+    <div class="item item-input-inset">
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="Digite sua mensagem..." ng-model="dados.conteudo">
+      </label>
+      <button class="button button-small" ng-click="enviar">
+        <i class="icon ion-android-send"></i>
+      </button>
+    </div>
+
+  </div>
+
 </ion-view>
+
+
+
+
+<!--
+    </ion-content>
+
+    <div class="bar bar-footer">
+
+            <button class="button button-small" ng-click="enviar()">
+                Submit
+            </button>
+        </div>
+    </div>
+</ion-view>
+-->

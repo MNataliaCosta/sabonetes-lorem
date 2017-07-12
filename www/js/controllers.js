@@ -40,6 +40,14 @@ angular.module('starter.controllers', [])
 .controller('OndeComprarCtrl', function($scope) {
 })
 
+.controller('LoginDuvidasCtrl', function($scope, $state, Facebook) {
+  $scope.login = function(){
+    Facebook.login(function(response) {
+      $state.go('app.duvidas')
+      });
+  }
+})
+
 .controller('DuvidasCtrl', function($scope) {
 })
 
