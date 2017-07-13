@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngMap'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngMap', 'facebook'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -69,8 +69,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     })
 
+  .state('app.login-duvidas', {
+    url: '/login-duvidas',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/login-duvidas.html',
+        controller: 'LoginDuvidasCtrl'
+      }
+    }
+  })
+
   .state('app.duvidas', {
-    url: '/tire-suas-duvidas',
+    url: '/login-duvidas/tire-suas-duvidas',
     views: {
       'menuContent': {
         templateUrl: 'templates/tire-suas-duvidas.html',
@@ -91,5 +101,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/inicio');
+})
 
-});
+.config(function(FacebookProvider) {
+   // Set your appId through the setAppId method or
+   // use the shortcut in the initialize method directly.
+   FacebookProvider.init('369080470174725');
+})
+
+;
