@@ -4,6 +4,11 @@ body{
   color: #585b59;
 }
 
+ion-content img.logo_sobre{
+  display: block;
+  margin: auto;
+}
+
 ion-header-bar.bar-stable.bar.bar-header{
   background-color: #5f837e;
 }
@@ -24,10 +29,10 @@ i.icon{
 }
 
 h1.title.title-left{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
 }
 
 .title.title-left.header-item{
@@ -45,12 +50,13 @@ button.button.button-block.button-royal{
   font-weight: bold;
   position: relative;
   bottom: 0;
+  background-color: #73498a;
 }
 
 /*ajustes início*/
 .pagina-inicio{
   padding: 15px;
-/*background: url("../img/fundo-inicio.png");
+  /*background: url("../img/fundo-inicio.png");
   background-size: 100% 100%;*/
 }
 
@@ -88,7 +94,7 @@ button.button.button-block.button-royal{
 
 /*ajustes página faca-o-seu*/
 .pagina-faca-o-seu{
-  padding: 15px 15px 5px 15px;
+  padding: 30px 15px 5px 15px;
 }
 
 .textos-formulario{
@@ -131,6 +137,11 @@ button.button.button-block.button-royal{
 /*ajustes página onde-comprar*/
 ng-map{
   height: 600px;
+}
+
+/*ajustes página login-tire-suas-duvidas*/
+.pagina-login{
+  padding: 15px;
 }
 
 /*ajustes página tire-suas-duvidas*/
