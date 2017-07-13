@@ -1,20 +1,19 @@
 <ion-view view-title="Tire suas dúvidas">
 
-  <div class="bar bar-header bar-positive">
-    <h1 class="title">{{dados.nome}}</h1>
-  </div>
-
   <ion-content class="pagina-tire-suas-duvidas has-header">
 
-    <div class="list card">
+    <div id="botao-apagar" class="botoes">
+      <button class="button button-assertive" ng-click="apagar()">
+        <ion-icon class="ion-trash-b"></ion-icon>
+      </button>
+    </div>
 
-        <div class="item item-avatar" ng-repeat="mensagem in mensagens">
+    <div class="list card">
+        <div class="item item-body" ng-repeat="mensagem in mensagens">
             <h2>{{mensagem.nome}}</h2>
             <p>{{mensagem.conteudo}}</p>
         </div>
-
     </div>
-
 
   </ion-content>
 
@@ -24,7 +23,7 @@
       <label class="item-input-wrapper">
         <input type="text" placeholder="Digite sua mensagem..." ng-model="dados.conteudo">
       </label>
-      <button class="button button-small" ng-click="enviar">
+      <button class="button button-small" ng-click="mandarMensagem()">
         <i class="icon ion-android-send"></i>
       </button>
     </div>

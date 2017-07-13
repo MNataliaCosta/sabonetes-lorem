@@ -53,6 +53,8 @@ button.button.button-block.button-royal{
   background-color: #73498a;
 }
 
+<<<<<<< HEAD
+=======
 /*ajustes início*/
 .pagina-inicio{
   padding: 15px;
@@ -92,6 +94,7 @@ button.button.button-block.button-royal{
 }
 
 
+>>>>>>> 283e8d12f6243a142083e997d53fb5b04211e354
 /*ajustes página faca-o-seu*/
 .pagina-faca-o-seu{
   padding: 30px 15px 5px 15px;
@@ -149,15 +152,6 @@ ng-map{
   position: absolute;
 }
 
-.conversa-chat{
-  position: relative;
-  bottom: 0;
-}
-
-.conversa-chat img{
-  width: 100%;
-}
-
 .item.item-input-inset{
   background-color: #694873;
 }
@@ -168,9 +162,30 @@ ng-map{
   width: 100%;
 }
 
+#botao-apagar{
+  margin: 10px 10px;
+  float: right;
+  position: relative;
+}
+
+.button.button-assertive{
+  width: 30%;
+}
+
+.list.card{
+  margin-top: 20px;
+  position: absolute;
+  top: 12%;
+}
+
 button.button.button-small{
   background-color: #694873;
   border: solid white 1px;
+}
+
+.list:last-child.card {
+  margin-top: 0px;
+  margin-bottom: 60px;
 }
 
 /*ajustes página sobre*/
