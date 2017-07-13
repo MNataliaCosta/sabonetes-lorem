@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['starter.services'])
 
 .controller('InicioCtrl', function($scope, $state) {
   $scope.iniciar = function(){
@@ -9,28 +9,29 @@ angular.module('starter.controllers', [])
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 })
 
-.controller('FacaOSeuCtrl', function($scope, $state, FacaOSeuService) {
+.controller('FacaOSeuCtrl', function($rootScope, $scope, $state, FacaOSeuService, $http) {
 
   $scope.peles = ['normal', 'sensível', 'mista', 'oleosa', 'seca'];
 
-  $scope.beneficios = ['hidratação', 'anti-acne', 'rejuvenescimento', 'redução de pelos', 'esfoliação', 'clareamento de manchas'];
+  $scope.beneficios = ['hidratação', 'anti-acne', 'rejuvenescimento', 'redução de pelos', 'esfoliação', 'clarear manchas'];
 
   $scope.resultado = {
     peles : null,
     beneficios : null
-  };
-
+      };
 
   $scope.enviar = function(){
-    FacaOSeuService.set($scope.resultado);
-    $state.go('app.detalheReceita')
-  }
+    $http.post('http://localhost:3000/resultados', $scope.resultado).then(function(ingrediente){
+      FacaOSeuService.set(ingrediente.data.texto);
+        $state.go('app.detalheReceita');
+    });
 
+  }
 })
 
 .controller('DetalheReceitaCtrl', function($scope, $state, $stateParams, FacaOSeuService) {
   // ele deve receber o objeto das receitas
-  $scope.resultado = FacaOSeuService.get($stateParams.texto)
+  $scope.resultados = FacaOSeuService.get();
 
   $scope.irMapa = function(){
     $state.go('app.ondeComprar')
