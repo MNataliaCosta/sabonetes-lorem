@@ -5,7 +5,7 @@ body{
 }
 
 ion-header-bar.bar-stable.bar.bar-header{
-  background-color: #4dc19e;
+  background-color: #5f837e;
 }
 
 .bar.bar-stable .title{
@@ -47,6 +47,48 @@ button.button.button-block.button-royal{
   bottom: 0;
 }
 
+<<<<<<< HEAD
+=======
+/*ajustes início*/
+.pagina-inicio{
+  padding: 15px;
+/*background: url("../img/fundo-inicio.png");
+  background-size: 100% 100%;*/
+}
+
+.pagina-inicio-conteudo{
+  height: 100%;
+  position: relative;
+}
+
+.pagina-inicio-conteudo img{
+  width: 70%;
+  display: block;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  right: 15%;
+}
+
+.pagina-inicio-conteudo p{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  bottom: 30%;
+  left: 5%;
+  right: 5%;
+  padding: 20px 0;
+}
+
+.pagina-inicio-conteudo button.button.button-block.button-royal{
+  position: absolute;
+  bottom: 0;
+}
+
+
+>>>>>>> 283e8d12f6243a142083e997d53fb5b04211e354
 /*ajustes página faca-o-seu*/
 .pagina-faca-o-seu{
   padding: 15px 15px 5px 15px;
@@ -100,7 +142,7 @@ ng-map{
 }
 
 .item.item-input-inset{
-  background-color: #886aea;
+  background-color: #694873;
 }
 
 .inputChat{
@@ -126,7 +168,7 @@ ng-map{
 }
 
 button.button.button-small{
-  background-color: #886aea;
+  background-color: #694873;
   border: solid white 1px;
 }
 
