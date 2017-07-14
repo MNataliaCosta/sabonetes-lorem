@@ -33,7 +33,11 @@ angular.module('starter.controllers', ['starter.services'])
   }
 })
 
-.controller('OndeComprarCtrl', function($scope) {
+.controller('OndeComprarCtrl', function($scope, $http, coordenadasService ) {
+  $http.get('http://localhost:3000/coordenadas').then(function(resposta){
+        $scope.lojas = resposta.data;
+    });
+
 })
 
 .controller('LoginDuvidasCtrl', function($scope, $state, Facebook, $cordovaOauth) {
