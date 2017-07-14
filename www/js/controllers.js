@@ -16,7 +16,7 @@ angular.module('starter.controllers', ['starter.services'])
       };
 
   $scope.enviar = function(){
-    $http.post('http://172.16.15.143:3000/resultados', $scope.resultado).then(function(ingrediente){
+    $http.post('http://localhost:3000/resultados', $scope.resultado).then(function(ingrediente){
       FacaOSeuService.set(ingrediente.data.texto);
         $state.go('app.detalheReceita');
     });
@@ -56,7 +56,7 @@ angular.module('starter.controllers', ['starter.services'])
 
   $scope.mandarMensagem = function (){
     //por enquanto está com IP da Natty
-    $http.post('http://172.16.15.143:3000/chat', $scope.dados).then(function(){
+    $http.post('http://localhost:3000/chat', $scope.dados).then(function(){
       $scope.dados.conteudo = '';
     });
     iniciarIntervalo();
@@ -72,7 +72,7 @@ angular.module('starter.controllers', ['starter.services'])
   //
   //   console.log('intervalo inicializado');
   //   intervalo = $interval(function(){
-      $http.get('http://172.16.15.143:3000/chat').then(function(response){
+      $http.get('http://localhost:3000/chat').then(function(response){
         $scope.mensagens = response.data;
       });
     // }, 1000);

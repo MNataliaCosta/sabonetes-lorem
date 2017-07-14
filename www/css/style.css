@@ -4,11 +4,6 @@ body{
   color: #585b59;
 }
 
-ion-content img.logo_sobre{
-  display: block;
-  margin: auto;
-}
-
 ion-header-bar.bar-stable.bar.bar-header{
   background-color: #5f837e;
 }
@@ -93,8 +88,6 @@ button.button.button-block.button-royal{
   bottom: 0;
 }
 
-
->>>>>>> 283e8d12f6243a142083e997d53fb5b04211e354
 /*ajustes página faca-o-seu*/
 .pagina-faca-o-seu{
   padding: 30px 15px 5px 15px;
@@ -191,4 +184,10 @@ button.button.button-small{
 /*ajustes página sobre*/
 .pagina-sobre{
   padding: 15px;
+}
+
+ion-content img.logo_sobre{
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
 }
