@@ -89,10 +89,7 @@ button.button.button-block.button-royal{
 /*ajustes página faca-o-seu*/
 .pagina-faca-o-seu{
   padding: 15px 15px 5px 15px;
-}
-
-.textos-formulario{
-  position: relative;
+  font-size: 16px;
 }
 
 .pagina-faca-o-seu-chamada{
@@ -103,7 +100,13 @@ button.button.button-block.button-royal{
 
 .textos-formulario{
   margin-bottom: 20px;
+  position: relative;
+  font-size: 16px;
+  text-align: justify;
+
+
 }
+
 
 /*ajustes página detalhe-receita*/
 .pagina-detalhe-receita{
@@ -164,5 +167,33 @@ button.button.button-small{
 
 /*ajustes página sobre*/
 .pagina-sobre{
-  padding: 15px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.sobre-nosso-significado{
+  padding: 5px;
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.sobre-nosso-significado span{
+  padding: 5px;
+  font-size: 14,5px;
+  text-align: justify;
+  margin-bottom: 20px;
+  }
+
+.sobre-os-benefícios p{
+  padding: 5px;
+  font-size: 14,5px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.sobre-os-benefícios li{
+  padding: 5px;
+  font-size: 14,5px;
 }
