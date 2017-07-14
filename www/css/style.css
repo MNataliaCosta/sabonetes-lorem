@@ -4,6 +4,11 @@ body{
   color: #585b59;
 }
 
+ion-content img.logo_sobre{
+  display: block;
+  margin: auto;
+}
+
 ion-header-bar.bar-stable.bar.bar-header{
   background-color: #5f837e;
 }
@@ -24,10 +29,10 @@ i.icon{
 }
 
 h1.title.title-left{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
 }
 
 .title.title-left.header-item{
@@ -45,51 +50,20 @@ button.button.button-block.button-royal{
   font-weight: bold;
   position: relative;
   bottom: 0;
-}
-
-/*ajustes início*/
-.pagina-inicio{
-  padding: 15px;
-/*background: url("../img/fundo-inicio.png");
-  background-size: 100% 100%;*/
-}
-
-.pagina-inicio-conteudo{
-  height: 100%;
-  position: relative;
-}
-
-.pagina-inicio-conteudo img{
-  width: 70%;
-  display: block;
-  margin: 0;
-  position: absolute;
-  top: 20%;
-  left: 15%;
-  right: 15%;
-}
-
-.pagina-inicio-conteudo p{
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  position: absolute;
-  bottom: 30%;
-  left: 5%;
-  right: 5%;
-  padding: 20px 0;
-}
-
-.pagina-inicio-conteudo button.button.button-block.button-royal{
-  position: absolute;
-  bottom: 0;
+  background-color: #73498a;
 }
 
 
-/*ajustes página faca-o-seu*/
 .pagina-faca-o-seu{
-  padding: 15px 15px 5px 15px;
+
+  padding: 30px 15px 5px 15px;
   font-size: 16px;
+
+}
+
+.textos-formulario{
+  position: relative;
+
 }
 
 .pagina-faca-o-seu-chamada{
@@ -136,18 +110,14 @@ ng-map{
   height: 600px;
 }
 
+/*ajustes página login-tire-suas-duvidas*/
+.pagina-login{
+  padding: 15px;
+}
+
 /*ajustes página tire-suas-duvidas*/
 .pagina-tire-suas-duvidas{
   position: absolute;
-}
-
-.conversa-chat{
-  position: relative;
-  bottom: 0;
-}
-
-.conversa-chat img{
-  width: 100%;
 }
 
 .item.item-input-inset{
@@ -160,9 +130,30 @@ ng-map{
   width: 100%;
 }
 
+#botao-apagar{
+  margin: 10px 10px;
+  float: right;
+  position: relative;
+}
+
+.button.button-assertive{
+  width: 30%;
+}
+
+.list.card{
+  margin-top: 20px;
+  position: absolute;
+  top: 12%;
+}
+
 button.button.button-small{
   background-color: #694873;
   border: solid white 1px;
+}
+
+.list:last-child.card {
+  margin-top: 0px;
+  margin-bottom: 60px;
 }
 
 /*ajustes página sobre*/

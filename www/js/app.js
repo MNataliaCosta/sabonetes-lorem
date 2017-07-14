@@ -25,11 +25,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
-  .state('inicio', {
-  url: '/inicio',
-  templateUrl: 'templates/inicio.html',
-  controller: 'InicioCtrl'
-})
 
   .state('app', {
   url: '/app',
@@ -100,7 +95,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   })
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/inicio');
+  $urlRouterProvider.otherwise('/app/faca-o-seu');
 })
 
 .config(function(FacebookProvider) {
