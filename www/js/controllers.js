@@ -36,13 +36,19 @@ angular.module('starter.controllers', ['starter.services'])
 .controller('OndeComprarCtrl', function($scope) {
 })
 
-.controller('LoginDuvidasCtrl', function($scope, $state, Facebook) {
+.controller('LoginDuvidasCtrl', function($scope, $state, Facebook, $cordovaOauth) {
   $scope.login = function(){
-    Facebook.login(function(response) {
-      $state.go('app.duvidas')
-      });
-  }
-})
+    //Facebook.login(function(response) {
+    //  $cordovaOauth.facebook('369080470174725', ['public_profile']).then(function(err, response){
+    //    if(err){
+    //      console.log(err);
+    //    }
+        $state.go('app.duvidas');
+      }})
+      //});
+    //});
+  //}
+//})
 
 .controller('DuvidasCtrl', function($scope, $state, Facebook, $http, $interval, $ionicScrollDelegate) {
   $scope.dados = {};
